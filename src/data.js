@@ -11,12 +11,12 @@ import Tools9 from "/assets/tools/MySql.png";
 import Tools10 from "/assets/tools/canva.png";
 import Tools11 from "/assets/tools/figma.png";
 import Tools12 from "/assets/tools/Postman.png";
-import Proyek1 from "/assets/proyek/proyek1.webp";
-import Proyek2 from "/assets/proyek/proyek2.webp";
-import Proyek3 from "/assets/proyek/proyek3.webp";
-import Proyek4 from "/assets/proyek/proyek4.webp";
-import Proyek5 from "/assets/proyek/proyek5.webp";
-import Proyek6 from "/assets/proyek/proyek6.webp";
+import Proyek1 from "/assets/proyek/proyek1.png";
+import Proyek2 from "/assets/proyek/proyek2.jpeg";
+import Proyek3 from "/assets/proyek/proyek3.png";
+import Proyek4 from "/assets/proyek/proyek4.png";
+import Proyek5 from "/assets/proyek/proyek5.png";
+import Proyek6 from "/assets/proyek/proyek6.png";
 
 const DataImage = {
   HeroImage,
@@ -112,49 +112,49 @@ export const listProyek = [
   {
     id: 1,
     gambar: Proyek1,
-    nama: "Website Sekolah",
+    nama: "Domain Checker Website",
     desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["HTML", "CSS", "Javascript", "AOS"],
+    tools: ["HTML", "Tailwind", "Javascript", "Bootstrap", "Laravel"],
     dad: "200",
   },
   {
     id: 2,
     gambar: Proyek2,
-    nama: "Company Profile",
+    nama: "School Website",
     desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["HTML", "CSS", "Javascript", "AOS", "Swiper", "Lightbox Gallery"],
+    tools: ["HTML", "CSS", "Javascript", "Bootstrap", "Wordpress", "Laravel"],
     dad: "300",
   },
   {
     id: 3,
     gambar: Proyek3,
-    nama: "Web Pernikahan 2.0",
+    nama: "Chat Bot With AI",
     desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["Vite", "ReactJS", "TailwindCSS", "AOS"],
+    tools: ["Html", "Tailwind", "Javascript", "Laravel"],
     dad: "400",
   },
   {
     id: 4,
     gambar: Proyek4,
-    nama: "Website Course",
+    nama: "Landing Page",
     desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["Vite", "ReactJS", "Bootstrap", "AOS"],
+    tools: ["Html", "Css", "Javascript"],
     dad: "500",
   },
   {
     id: 5,
     gambar: Proyek5,
-    nama: "Web Portfolio",
+    nama: "Scissors Paper Rock Game",
     desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["HTML", "CSS", "Javascript", "Bootsrap"],
+    tools: ["HTML", "CSS", "Javascript", "Node.js"],
     dad: "600",
   },
   {
     id: 6,
     gambar: Proyek6,
-    nama: "Company Profile 2.0",
+    nama: "Capture The Flag",
     desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["NextJS", "TailwindCSS", "Framermotion"],
+    tools: ["Html", "Tailwind", "Bootstrap", "Javascript", "Laravel"],
     dad: "700",
   },
 ];

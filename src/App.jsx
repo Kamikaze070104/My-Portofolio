@@ -1,6 +1,7 @@
 // App.jsx
 import DataImage from "./data.js";
 import { listTools } from "./data.js";
+import { listProyek } from "./data.js";
 function App() {
   return (
     <>
@@ -14,7 +15,7 @@ function App() {
                 <img
                   src={DataImage.HeroImage}
                   alt="Hero Icon"
-                  className="w-10 h-10 object-cover rounded-md"
+                  className="w-10 h-10 object-cover rounded-md" loading="lazy"
                 />
                 <q className="text-sm sm:text-base font-inter italic">
                   Nothing last forever, we can change the future 🔥
@@ -52,7 +53,7 @@ function App() {
               <img
                 src={DataImage.HeroImage}
                 alt="Faizal Azzriel Gibar"
-                className="w-40 sm:w-64 md:w-[350px] lg:w-[400px] h-auto rounded-2xl mx-auto md:mx-0 shadow-lg object-cover"
+                className="w-40 sm:w-64 md:w-[350px] lg:w-[400px] h-auto rounded-2xl mx-auto md:mx-0 shadow-lg object-cover" loading="lazy"
               />
             </div>
           </div>
@@ -65,7 +66,7 @@ function App() {
           <img
             src={DataImage.HeroImage}
             alt="img"
-            className="w-12 rounded-md mb-10 sm:hidden"
+            className="w-12 rounded-md mb-10 sm:hidden" loading="lazy"
           />
           <p className="text-base/loose mb-10">
             Hello! my name is Faizal Azzriel Gibar, I am a Software Engineering
@@ -81,7 +82,7 @@ function App() {
             <img
               src={DataImage.HeroImage}
               alt="Image"
-              className="w-12 rounded-md sm:block hidden"
+              className="w-12 rounded-md sm:block hidden" loading="lazy"
             />
             <div className="flex items-center gap-6">
               <div>
@@ -114,11 +115,46 @@ function App() {
                 <img
                   src={tool.gambar}
                   alt={tool.nama}
-                  className="w-14 bg-zinc-800 p-1 group-hover:bg-zinc-900"
+                  className="w-14 bg-zinc-800 p-1 group-hover:bg-zinc-900" loading="lazy"
                 />
                 <div>
                   <h4 className="font-bold">{tool.nama}</h4>
                   <p className="opacity-50">{tool.ket}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        {/* Projects */}
+        <div className="proyek mt-32 py-10">
+          <h1 className="text-center text-4xl font-bold mb-2">Projects</h1>
+          <p className="text-base/loose text-center opacity-50">here are some of the projects I've made</p>
+          <div className="proyek-box mt-14 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
+            {listProyek.map((proyek) => (
+              <div
+                key={proyek.id}
+                className="p-4 rounded-md bg-zinc-800"
+              >
+                <img
+                  src={proyek.gambar}
+                  alt="proyek image" loading="lazy"
+                />
+                <div>
+                  <h1 className="text-2xl font-bold my-4">{proyek.nama}</h1>
+                  <p className="text-base/loose mb-4">{proyek.desk}</p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {proyek.tools.map((tool, index) => (
+                      <span
+                        key={index}
+                        className="py-1 px-3 bg-zinc-700 rounded-md font-semibold"
+                      >
+                        {tool}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="mt-8 text-center">
+                    <a href="#" className="bg-violet-700 p-3 rounded-lg block border border-zinc-600 hover:bg-violet-600">See Website</a>
+                  </div>
                 </div>
               </div>
             ))}
