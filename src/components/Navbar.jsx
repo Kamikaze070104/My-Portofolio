@@ -40,6 +40,11 @@ const Navbar = () => {
           </li>
           <li>
             <a href="#" className="sm:text-lg text-base font-medium">
+              Certificate
+            </a>
+          </li>
+          <li>
+            <a href="#" className="sm:text-lg text-base font-medium">
               Contact
             </a>
           </li>

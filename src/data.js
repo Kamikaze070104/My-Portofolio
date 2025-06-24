@@ -17,6 +17,12 @@ import Proyek3 from "/assets/proyek/proyek3.png";
 import Proyek4 from "/assets/proyek/proyek4.png";
 import Proyek5 from "/assets/proyek/proyek5.png";
 import Proyek6 from "/assets/proyek/proyek6.png";
+import Sertif1 from "/assets/sertifikat/sertif1.png";
+import Sertif2 from "/assets/sertifikat/sertif2.png";
+import Sertif3 from "/assets/sertifikat/sertif3.png";
+import Sertif4 from "/assets/sertifikat/sertif4.png";
+import Sertif5 from "/assets/sertifikat/sertif5.png";
+import Sertif6 from "/assets/sertifikat/sertif6.png";
 
 const DataImage = {
   HeroImage,
@@ -158,5 +164,50 @@ export const listProyek = [
     dad: "700",
   },
 ];
+
+export const listSertifikat = [
+  {
+    id: 1,
+    gambar: Sertif1,
+    nama: "React.js Basic",
+    desk: "Meta-Coursera",
+    dad: "100",
+  },
+  {
+    id: 2,
+    gambar: Sertif2,
+    nama: "React Native",
+    desk: "Meta-Coursera",
+    dad: "200",
+  },
+  {
+    id: 3,
+    gambar: Sertif3,
+    nama: "React.js Advanced",
+    desk: "Meta-Coursera",
+    dad: "300",
+  },
+  {
+    id: 4,
+    gambar: Sertif4,
+    nama: "Introduction to Web Development",
+    desk: "IBM-Coursera",
+    dad: "400",
+  },
+  {
+    id: 5,
+    gambar: Sertif5,
+    nama: "Node.js for Bootcamp",
+    desk: "KOMPETEGRAM",
+    dad: "500",
+  },
+  {
+    id: 6,
+    gambar: Sertif6,
+    nama: "Basic Frontend Web Development",
+    desk: "Dicoding",
+    dad: "600",
+  },
+]
 
 export default DataImage;

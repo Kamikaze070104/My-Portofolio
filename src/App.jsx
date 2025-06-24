@@ -2,6 +2,8 @@
 import DataImage from "./data.js";
 import { listTools } from "./data.js";
 import { listProyek } from "./data.js";
+import { listSertifikat } from "./data.js";
+
 function App() {
   return (
     <>
@@ -15,7 +17,8 @@ function App() {
                 <img
                   src={DataImage.HeroImage}
                   alt="Hero Icon"
-                  className="w-10 h-10 object-cover rounded-md" loading="lazy"
+                  className="w-10 h-10 object-cover rounded-md"
+                  loading="lazy"
                 />
                 <q className="text-sm sm:text-base font-inter italic">
                   Nothing last forever, we can change the future 🔥
@@ -53,7 +56,8 @@ function App() {
               <img
                 src={DataImage.HeroImage}
                 alt="Faizal Azzriel Gibar"
-                className="w-40 sm:w-64 md:w-[350px] lg:w-[400px] h-auto rounded-2xl mx-auto md:mx-0 shadow-lg object-cover" loading="lazy"
+                className="w-40 sm:w-64 md:w-[350px] lg:w-[400px] h-auto rounded-2xl mx-auto md:mx-0 shadow-lg object-cover"
+                loading="lazy"
               />
             </div>
           </div>
@@ -66,7 +70,8 @@ function App() {
           <img
             src={DataImage.HeroImage}
             alt="img"
-            className="w-12 rounded-md mb-10 sm:hidden" loading="lazy"
+            className="w-12 rounded-md mb-10 sm:hidden"
+            loading="lazy"
           />
           <p className="text-base/loose mb-10">
             Hello! my name is Faizal Azzriel Gibar, I am a Software Engineering
@@ -82,7 +87,8 @@ function App() {
             <img
               src={DataImage.HeroImage}
               alt="Image"
-              className="w-12 rounded-md sm:block hidden" loading="lazy"
+              className="w-12 rounded-md sm:block hidden"
+              loading="lazy"
             />
             <div className="flex items-center gap-6">
               <div>
@@ -115,7 +121,8 @@ function App() {
                 <img
                   src={tool.gambar}
                   alt={tool.nama}
-                  className="w-14 bg-zinc-800 p-1 group-hover:bg-zinc-900" loading="lazy"
+                  className="w-14 bg-zinc-800 p-1 group-hover:bg-zinc-900"
+                  loading="lazy"
                 />
                 <div>
                   <h4 className="font-bold">{tool.nama}</h4>
@@ -128,17 +135,13 @@ function App() {
         {/* Projects */}
         <div className="proyek mt-32 py-10">
           <h1 className="text-center text-4xl font-bold mb-2">Projects</h1>
-          <p className="text-base/loose text-center opacity-50">here are some of the projects I've made</p>
+          <p className="text-base/loose text-center opacity-50">
+            here are some of the projects I've made
+          </p>
           <div className="proyek-box mt-14 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
             {listProyek.map((proyek) => (
-              <div
-                key={proyek.id}
-                className="p-4 rounded-md bg-zinc-800"
-              >
-                <img
-                  src={proyek.gambar}
-                  alt="proyek image" loading="lazy"
-                />
+              <div key={proyek.id} className="p-4 rounded-md bg-zinc-800">
+                <img src={proyek.gambar} alt="proyek image" loading="lazy" />
                 <div>
                   <h1 className="text-2xl font-bold my-4">{proyek.nama}</h1>
                   <p className="text-base/loose mb-4">{proyek.desk}</p>
@@ -153,13 +156,100 @@ function App() {
                     ))}
                   </div>
                   <div className="mt-8 text-center">
-                    <a href="#" className="bg-violet-700 p-3 rounded-lg block border border-zinc-600 hover:bg-violet-600">See Website</a>
+                    <a
+                      href="#"
+                      className="bg-violet-700 p-3 rounded-lg block border border-zinc-600 hover:bg-violet-600"
+                    >
+                      See Website
+                    </a>
                   </div>
                 </div>
               </div>
             ))}
           </div>
         </div>
+        {/* Sertifikat */}
+        <div className="sertifikat mt-32 py-10">
+          <h1 className="text-center text-4xl font-bold mb-2">Certificate</h1>
+          <p className="text-base/loose text-center opacity-50 mb-10">
+            here are some certificates that I have
+          </p>
+          <div className="sertifikat-box mt-14 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
+            {listSertifikat.map((sertif) => (
+              <div
+                key={sertif.id}
+                className="p-4 rounded-md bg-zinc-800 flex flex-col items-center"
+              >
+                <img
+                  src={sertif.gambar}
+                  alt={sertif.nama}
+                  className="w-64 h-64 object-contain mb-4 rounded-md"
+                  loading="lazy"
+                />
+                <h2 className="text-xl font-bold mb-2 text-center">
+                  {sertif.nama}
+                </h2>
+                <p className="opacity-70 text-center">{sertif.desk}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      {/* contact */}
+      <div className="mt-32 p-10">
+        <h1 className="text-4xl mb-2 font-bold text-center">Contact</h1>
+        <p className="text-base/loos text-center mb-10 opacity-50 ">
+          let's Connect with me
+        </p>
+        <form
+          action="https://formsubmit.co/faizalazzriel@gmail.com"
+          method="POST"
+          className="bg-zinc-800 p-10 w-fit mx-auto rounded-md"
+          autoComplete="off"
+        >
+          <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-2">
+              <label className="font-semibold">Full Name</label>
+              <input
+                type="text"
+                name="nama"
+                placeholder="input name..."
+                className="border border-zinc-500 p-2 rounded-md"
+                required
+              ></input>
+            </div>
+            <div className="flex flex-col gap-2">
+              <label className="font-semibold">Email</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="input email..."
+                className="border border-zinc-500 p-2 rounded-md"
+                required
+              ></input>
+            </div>
+            <div className="flex flex-col gap-2">
+              <label className="font-semibold">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="45"
+                rows="7"
+                placeholder="input message..."
+                className="border border-zinc-500 p-2 rounded-md"
+                required
+              ></textarea>
+            </div>
+            <div className="text-center">
+              <button
+                type="submit"
+                className="bg-violet-700 p-3 rounded-lg w-full cursor-pointer border border-zinc-600 hover:bg-violet-600"
+              >
+                Send Message
+              </button>
+            </div>
+          </div>
+        </form>
       </div>
     </>
   );
