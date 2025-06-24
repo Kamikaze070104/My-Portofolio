@@ -196,7 +196,7 @@ function App() {
         </div>
       </div>
       {/* contact */}
-      <div className="mt-32 p-10">
+      <div className="mt-32 sm:p-10 p-0">
         <h1 className="text-4xl mb-2 font-bold text-center">Contact</h1>
         <p className="text-base/loos text-center mb-10 opacity-50 ">
           let's Connect with me
@@ -204,7 +204,7 @@ function App() {
         <form
           action="https://formsubmit.co/faizalazzriel@gmail.com"
           method="POST"
-          className="bg-zinc-800 p-10 w-fit mx-auto rounded-md"
+          className="bg-zinc-800 p-10 sm:w-fit w-full mx-auto rounded-md"
           autoComplete="off"
         >
           <div className="flex flex-col gap-6">
