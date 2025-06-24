@@ -1,22 +1,26 @@
 import HeroImage from "/assets/Faizal-img.png";
-
-const Image = {
-  HeroImage,
-};
-
-export default Image;
-
 import Tools1 from "/assets/tools/vscode.png";
 import Tools2 from "/assets/tools/reactjs.png";
-import Tools3 from "/assets/tools/nextjs.png";
+import Tools3 from "/assets/tools/laravel.png";
 import Tools4 from "/assets/tools/tailwind.png";
 import Tools5 from "/assets/tools/bootstrap.png";
 import Tools6 from "/assets/tools/js.png";
 import Tools7 from "/assets/tools/nodejs.png";
 import Tools8 from "/assets/tools/github.png";
-import Tools9 from "/assets/tools/ai.png";
+import Tools9 from "/assets/tools/MySql.png";
 import Tools10 from "/assets/tools/canva.png";
 import Tools11 from "/assets/tools/figma.png";
+import Tools12 from "/assets/tools/Postman.png";
+import Proyek1 from "/assets/proyek/proyek1.webp";
+import Proyek2 from "/assets/proyek/proyek2.webp";
+import Proyek3 from "/assets/proyek/proyek3.webp";
+import Proyek4 from "/assets/proyek/proyek4.webp";
+import Proyek5 from "/assets/proyek/proyek5.webp";
+import Proyek6 from "/assets/proyek/proyek6.webp";
+
+const DataImage = {
+  HeroImage,
+};
 
 export const listTools = [
   {
@@ -36,7 +40,7 @@ export const listTools = [
   {
     id: 3,
     gambar: Tools3,
-    nama: "Next JS",
+    nama: "Laravel",
     ket: "Framework",
     dad: "300",
   },
@@ -78,8 +82,8 @@ export const listTools = [
   {
     id: 9,
     gambar: Tools9,
-    nama: "Adobe Illustrator",
-    ket: "Design App",
+    nama: "MySQL",
+    ket: "Database",
     dad: "900",
   },
   {
@@ -96,14 +100,13 @@ export const listTools = [
     ket: "Design App",
     dad: "1100",
   },
+  { id: 12,
+    gambar: Tools12,
+    nama: "Postman",
+    ket: "API Testing",
+    dad: "1200",
+  },
 ];
-
-import Proyek1 from "/assets/proyek/proyek1.webp";
-import Proyek2 from "/assets/proyek/proyek2.webp";
-import Proyek3 from "/assets/proyek/proyek3.webp";
-import Proyek4 from "/assets/proyek/proyek4.webp";
-import Proyek5 from "/assets/proyek/proyek5.webp";
-import Proyek6 from "/assets/proyek/proyek6.webp";
 
 export const listProyek = [
   {
@@ -155,3 +158,5 @@ export const listProyek = [
     dad: "700",
   },
 ];
+
+export default DataImage;
