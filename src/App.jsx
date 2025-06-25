@@ -7,7 +7,7 @@ import { listSertifikat } from "./data.js";
 function App() {
   const downloadCV = () => {
     const link = document.createElement('a');
-    link.href = 'assets/CV Faizal.pdf';
+    link.href = '/assets/CV Faizal.pdf';
     link.download = 'CV Faizal Azzriel Gibar.pdf';
     document.body.appendChild(link);
     link.click();
