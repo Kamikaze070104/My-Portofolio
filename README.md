@@ -1,12 +1,32 @@
-# React + Vite
+# My Portofolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ini adalah proyek website portofolio pribadi untuk Faizal Azzriel Gibar. Website ini menampilkan profil, keahlian, tools yang digunakan, daftar proyek, sertifikat, dan form kontak.
 
-Currently, two official plugins are available:
+## Fitur Utama
+- **PreLoader**: Animasi loading saat website pertama kali dibuka.
+- **Hero Section**: Perkenalan dengan animasi typing dan foto profil.
+- **About**: Penjelasan singkat tentang Faizal, pengalaman, dan tools yang sering digunakan.
+- **Projects**: Showcase beberapa proyek yang pernah dikerjakan lengkap dengan tools yang digunakan.
+- **Certificates**: Daftar sertifikat yang pernah diraih, beserta link untuk melihat detail sertifikat.
+- **Contact Form**: Formulir untuk mengirim pesan langsung ke email Faizal.
+- **Responsive Design**: Tampilan sudah mobile-friendly dan responsif.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Teknologi yang Digunakan
+- **React.js** (Vite)
+- **Tailwind CSS**
+- **AOS (Animate On Scroll)**
+- **Remixicon** (icon)
 
-## Expanding the ESLint configuration
+## Struktur Folder Penting
+- `src/` - Source code utama
+  - `components/` - Komponen React (Navbar, Footer, PreLoader, dll)
+  - `data.js` - Data tools, proyek, sertifikat
+  - `App.jsx` - Komponen utama aplikasi
+- `public/assets/` - Gambar, ikon, dan file CV
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Kontak
+Website ini dibuat oleh **Faizal Azzriel Gibar**. Silakan gunakan form kontak di website untuk menghubungi atau email ke faizalazzriel@gmail.com.
+
+---
+
+> Website ini dibuat untuk menampilkan portofolio, pengalaman, dan keahlian Faizal secara profesional dan interaktif.
