@@ -5,6 +5,15 @@ import { listProyek } from "./data.js";
 import { listSertifikat } from "./data.js";
 
 function App() {
+  const downloadCV = () => {
+    const link = document.createElement('a');
+    link.href = '/assets/CV Faizal.pdf';
+    link.download = 'CV Faizal Azzriel Gibar.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <>
       <section className="w-full min-h-[80vh] flex items-center justify-center bg-zinc-900 text-white font-sans">
@@ -28,6 +37,9 @@ function App() {
                 Hello, I'm{" "}
                 <span className="text-violet-600">Faizal Azzriel Gibar</span>
               </h1>
+              <h3 className="text-2xl md:text-3xl font-semibold mb-6 text-left font-inter leading-tight">
+                Web Developer
+              </h3>
               <p className="text-base md:text-lg mb-6 opacity-80 text-justify font-inter">
                 I have an interest in programming and development, especially
                 web-based development both as a front-end web developer and even
@@ -36,14 +48,14 @@ function App() {
                 honing my programming skills.
               </p>
               <div className="flex flex-col sm:flex-row items-center gap-4">
-                <a
-                  href="#"
-                  className="bg-violet-700 p-4 rounded-2xl hover:bg-violet-600 transition-colors duration-200 w-full sm:w-auto text-center flex items-center justify-center gap-2 font-semibold"
+                <button
+                  onClick={downloadCV}
+                  className="bg-violet-700 p-4 rounded-2xl hover:bg-violet-600 transition-colors duration-200 w-full sm:w-auto text-center flex items-center justify-center gap-2 font-semibold cursor-pointer"
                 >
                   Download CV <i className="ri-download-line ri-lg"></i>
-                </a>
+                </button>
                 <a
-                  href="#"
+                  href="#project"
                   className="bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-600 transition-colors duration-200 w-full sm:w-auto text-center flex items-center justify-center gap-2 font-semibold"
                 >
                   See Project <i className="ri-arrow-down-long-line ri-lg"></i>
@@ -65,7 +77,7 @@ function App() {
       </section>
 
       {/* About Section */}
-      <div className="tentang mt:32 py-10">
+      <div className="tentang mt:32 py-10" id="about">
         <div
           className="xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-zinc-800 rounded-lg"
           data-aos="fade-up"
@@ -155,7 +167,7 @@ function App() {
           </div>
         </div>
         {/* Projects */}
-        <div className="proyek mt-32 py-10">
+        <div className="proyek mt-32 py-10" id="project">
           <h1
             className="text-center text-4xl font-bold mb-2"
             data-aos="fade-up"
@@ -199,7 +211,7 @@ function App() {
                   </div>
                   <div className="mt-8 text-center">
                     <a
-                      href="#"
+                      href={proyek.link || "#"}
                       className="bg-violet-700 p-3 rounded-lg block border border-zinc-600 hover:bg-violet-600"
                     >
                       See Website
@@ -211,7 +223,7 @@ function App() {
           </div>
         </div>
         {/* Sertifikat */}
-        <div className="sertifikat mt-32 py-10">
+        <div className="sertifikat mt-32 py-10" id="certificate">
           <h1
             className="text-center text-4xl font-bold mb-2"
             data-aos="fade-up"
@@ -249,13 +261,21 @@ function App() {
                   {sertif.nama}
                 </h2>
                 <p className="opacity-70 text-center">{sertif.desk}</p>
+                <div className="mt-4">
+                  <a
+                    href={sertif.link}
+                    className="bg-violet-700 p-3 rounded-lg block border border-zinc-600 hover:bg-violet-600 text-center"
+                  >
+                    See Certificate
+                  </a>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </div>
       {/* contact */}
-      <div className="mt-32 sm:p-10 p-0">
+      <div className="mt-32 sm:p-10 p-0" id="contact">
         <h1
           className="text-4xl mb-2 font-bold text-center"
           data-aos="fade-up"
