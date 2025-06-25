@@ -6,14 +6,15 @@ import { listSertifikat } from "./data.js";
 
 function App() {
   const downloadCV = () => {
-    const link = document.createElement('a');
-    link.href = 'assets/CV Faizal.pdf';
-    link.download = 'CV Faizal Azzriel Gibar.pdf';
+    const link = document.createElement("a");
+    // Gunakan import.meta.env.BASE_URL untuk mendapatkan base path yang benar
+    // BASE_URL akan menjadi '/My-Portofolio/' (dengan slash di akhir)
+    link.href = `${import.meta.env.BASE_URL}assets/CV Faizal.pdf`;
+    link.download = "CV Faizal Azzriel Gibar.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
-
   return (
     <>
       <section className="w-full min-h-[80vh] flex items-center justify-center bg-zinc-900 text-white font-sans">
