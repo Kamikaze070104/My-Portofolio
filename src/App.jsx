@@ -11,7 +11,7 @@ function App() {
         <div className="container mx-auto px-4 py-12 md:py-20">
           <div className="flex flex-col md:flex-row items-center md:items-center gap-8 md:gap-16">
             {/* Left: Text Content (always first in source order for mobile) */}
-            <div className="w-full md:w-1/2 flex flex-col justify-center">
+            <div className="w-full md:w-1/2 flex flex-col justify-center animate__animated animate__fadeInUp animate__delay-3s">
               <div className="flex items-center gap-3 mb-8 bg-zinc-800 p-4 rounded-2xl w-fit">
                 {/* Ensure the Hero Icon image is appropriately sized and styled */}
                 <img
@@ -56,7 +56,7 @@ function App() {
               <img
                 src={DataImage.HeroImage}
                 alt="Faizal Azzriel Gibar"
-                className="w-40 sm:w-64 md:w-[350px] lg:w-[400px] h-auto rounded-2xl mx-auto md:mx-0 shadow-lg object-cover"
+                className="w-40 sm:w-64 md:w-[350px] lg:w-[400px] h-auto rounded-2xl mx-auto md:mx-0 shadow-lg object-cover animate__animated animate__fadeInUp animate__delay-4s"
                 loading="lazy"
               />
             </div>
@@ -66,7 +66,12 @@ function App() {
 
       {/* About Section */}
       <div className="tentang mt:32 py-10">
-        <div className="xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-zinc-800 rounded-lg">
+        <div
+          className="xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-zinc-800 rounded-lg"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
           <img
             src={DataImage.HeroImage}
             alt="img"
@@ -107,8 +112,21 @@ function App() {
           </div>
         </div>
         <div className="tools mt-32">
-          <h1 className="text-4xl/snug font-bold mb-4">Tools Used</h1>
-          <p className="xl:w-2/5 lg:w-2/4 md:w-2/3 sm:w-3/4 w-full text-base/loose opacity-50">
+          <h1
+            className="text-4xl/snug font-bold mb-4"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
+            Tools Used
+          </h1>
+          <p
+            className="xl:w-2/5 lg:w-2/4 md:w-2/3 sm:w-3/4 w-full text-base/loose opacity-50"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+            data-aos-once="true"
+          >
             Here are some tools that I often use when creating a website or
             design
           </p>
@@ -116,7 +134,11 @@ function App() {
             {listTools.map((tool) => (
               <div
                 key={tool.id}
-                className="flex items-center gap-2 p-3 border border-zinc-600 rounded-md hover:bg-zinc-800 group"
+                className="flex items-center gap-2 p-3 border border-zinc-600 rounded-md hover:bg-zinc-800 group "
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay={tool.dad}
+                data-aos-once="true"
               >
                 <img
                   src={tool.gambar}
@@ -134,13 +156,33 @@ function App() {
         </div>
         {/* Projects */}
         <div className="proyek mt-32 py-10">
-          <h1 className="text-center text-4xl font-bold mb-2">Projects</h1>
-          <p className="text-base/loose text-center opacity-50">
+          <h1
+            className="text-center text-4xl font-bold mb-2"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
+            Projects
+          </h1>
+          <p
+            className="text-base/loose text-center opacity-50"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+            data-aos-once="true"
+          >
             here are some of the projects I've made
           </p>
           <div className="proyek-box mt-14 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
             {listProyek.map((proyek) => (
-              <div key={proyek.id} className="p-4 rounded-md bg-zinc-800">
+              <div
+                key={proyek.id}
+                className="p-4 rounded-md bg-zinc-800"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay={proyek.dad}
+                data-aos-once="true"
+              >
                 <img src={proyek.gambar} alt="proyek image" loading="lazy" />
                 <div>
                   <h1 className="text-2xl font-bold my-4">{proyek.nama}</h1>
@@ -170,8 +212,21 @@ function App() {
         </div>
         {/* Sertifikat */}
         <div className="sertifikat mt-32 py-10">
-          <h1 className="text-center text-4xl font-bold mb-2">Certificate</h1>
-          <p className="text-base/loose text-center opacity-50 mb-10">
+          <h1
+            className="text-center text-4xl font-bold mb-2"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
+            Certificate
+          </h1>
+          <p
+            className="text-base/loose text-center opacity-50 mb-10"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+            data-aos-once="true"
+          >
             here are some certificates that I have
           </p>
           <div className="sertifikat-box mt-14 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
@@ -179,6 +234,10 @@ function App() {
               <div
                 key={sertif.id}
                 className="p-4 rounded-md bg-zinc-800 flex flex-col items-center"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay={sertif.dad}
+                data-aos-once="true"
               >
                 <img
                   src={sertif.gambar}
@@ -197,8 +256,21 @@ function App() {
       </div>
       {/* contact */}
       <div className="mt-32 sm:p-10 p-0">
-        <h1 className="text-4xl mb-2 font-bold text-center">Contact</h1>
-        <p className="text-base/loos text-center mb-10 opacity-50 ">
+        <h1
+          className="text-4xl mb-2 font-bold text-center"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          Contact
+        </h1>
+        <p
+          className="text-base/loos text-center mb-10 opacity-50"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+          data-aos-once="true"
+        >
           let's Connect with me
         </p>
         <form
@@ -206,6 +278,10 @@ function App() {
           method="POST"
           className="bg-zinc-800 p-10 sm:w-fit w-full mx-auto rounded-md"
           autoComplete="off"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="500"
+          data-aos-once="true"
         >
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-2">
