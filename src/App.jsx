@@ -3,6 +3,7 @@ import DataImage from "./data.js";
 import { listTools } from "./data.js";
 import { listProyek } from "./data.js";
 import { listSertifikat } from "./data.js";
+import Particles from "../Reactbits/Particles/Particles";
 
 function App() {
   const downloadCV = () => {
@@ -17,6 +18,20 @@ function App() {
   };
   return (
     <>
+      {/* Particles Background */}
+      <div style={{position: 'fixed', inset: 0, zIndex: 0, pointerEvents: 'none'}}>
+        <Particles
+          particleColors={["#ffffff", "#a78bfa"]}
+          particleCount={200}
+          particleSpread={10}
+          speed={0.1}
+          particleBaseSize={100}
+          moveParticlesOnHover={true}
+          alphaParticles={false}
+          disableRotation={false}
+        />
+      </div>
+      {/* End Particles Background */}
       <section className="w-full min-h-[80vh] flex items-center justify-center bg-zinc-900 text-white font-sans">
         <div className="container mx-auto px-4 py-12 md:py-20">
           <div className="flex flex-col md:flex-row items-center md:items-center gap-8 md:gap-16">

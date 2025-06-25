@@ -7,6 +7,7 @@ import "remixicon/fonts/remixicon.css";
 import Footer from './components/Footer.jsx'
 import PreLoader from './components/PreLoader.jsx'
 import "animate.css";
+import Particles from "../Reactbits/Particles/Particles";
 
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
