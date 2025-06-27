@@ -1,32 +1,27 @@
 # My Portofolio
 
-Ini adalah proyek website portofolio pribadi untuk Faizal Azzriel Gibar. Website ini menampilkan profil, keahlian, tools yang digunakan, daftar proyek, sertifikat, dan form kontak.
+**Faizal Azzriel Gibar** personal portfolio website. Features profile, education, experience, expertise, tools, projects, certificates, and contacts.
 
-## Fitur Utama
-- **PreLoader**: Animasi loading saat website pertama kali dibuka.
-- **Hero Section**: Perkenalan dengan animasi typing dan foto profil.
-- **About**: Penjelasan singkat tentang Faizal, pengalaman, dan tools yang sering digunakan.
-- **Projects**: Showcase beberapa proyek yang pernah dikerjakan lengkap dengan tools yang digunakan.
-- **Certificates**: Daftar sertifikat yang pernah diraih, beserta link untuk melihat detail sertifikat.
-- **Contact Form**: Formulir untuk mengirim pesan langsung ke email Faizal.
-- **Responsive Design**: Tampilan sudah mobile-friendly dan responsif.
+## Key Features
+- About**: A description of Faizal, including education (University of Education Indonesia & Vocational Highschool 8 Bandung), organisational/internship experience, and frequently used tools.
+- **Education**: Education history with details of years, major, accreditation, and grades.
+- Experience**: List of organisational, community, and internship experiences with descriptions of roles and times.
+- **Projects**: Showcase of past projects with tools used and demo/source code links.
+- **Certificates**: List of certificates that have been achieved, along with links to view certificate details.
+- **Contact Form**: Form to send a message directly to Faizal's email.
+- Responsive Design**: Mobile-friendly and responsive display.
 
-## Teknologi yang Digunakan
+## Technology Used
 - **React.js** (Vite)
 - **Tailwind CSS**
 - **AOS (Animate On Scroll)**
 - **Remixicon** (icon)
+- **React Bits**
 
-## Struktur Folder Penting
-- `src/` - Source code utama
-  - `components/` - Komponen React (Navbar, Footer, PreLoader, dll)
-  - `data.js` - Data tools, proyek, sertifikat
-  - `App.jsx` - Komponen utama aplikasi
-- `public/assets/` - Gambar, ikon, dan file CV
 
-## Kontak
-Website ini dibuat oleh **Faizal Azzriel Gibar**. Silakan gunakan form kontak di website untuk menghubungi atau email ke faizalazzriel@gmail.com.
+## Contact
+This website was created by **Faizal Azzriel Gibar**. Please use the contact form on the website or email faizalazzriel@gmail.com.
 
 ---
 
-> Website ini dibuat untuk menampilkan portofolio, pengalaman, dan keahlian Faizal secara profesional dan interaktif.
+> This website was created to showcase Faizal's portfolio, experience, and expertise in a professional and interactive manner.
