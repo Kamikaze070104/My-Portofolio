@@ -3,6 +3,7 @@ import DataImage from "./data.js";
 import { listTools } from "./data.js";
 import { listProyek } from "./data.js";
 import { listSertifikat } from "./data.js";
+import { listExperience } from "./data.js";
 import Particles from "../Reactbits/Particles/Particles";
 import TypeIt from "typeit-react";
 
@@ -20,7 +21,14 @@ function App() {
   return (
     <>
       {/* Particles Background */}
-      <div style={{position: 'fixed', inset: 0, zIndex: 0, pointerEvents: 'none'}}>
+      <div
+        style={{
+          position: "fixed",
+          inset: 0,
+          zIndex: 0,
+          pointerEvents: "none",
+        }}
+      >
         <Particles
           particleColors={["#ffffff", "#a78bfa"]}
           particleCount={200}
@@ -148,6 +156,109 @@ function App() {
                 <p>Years of Experience</p>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="education mt-32">
+          <h1
+            className="text-4xl/snug font-bold mb-4"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
+            Education
+          </h1>
+          <div
+            className="bg-zinc-800 rounded-lg p-6 flex flex-col sm:flex-row items-center gap-6 shadow-md"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="200"
+            data-aos-once="true"
+          >
+            <div className="flex-shrink-0">
+              <img
+                src={DataImage.education1}
+                alt="UPI Logo"
+                className="w-16 h-16 rounded-md object-cover"
+                loading="lazy"
+              />
+            </div>
+            <div className="w-full">
+              <h2 className="text-2xl font-bold mb-1">
+                University of Education Indonesia
+              </h2>
+              <p className="text-base opacity-70 mb-1">2022 - 2026</p>
+              <p className="text-base mb-1">
+                Bachelor's degree in Software Engineering
+              </p>
+              <p className="text-base font-semibold text-violet-500">
+                Grade: 3.85
+              </p>
+            </div>
+          </div>
+          {/* Vocational Highschool 8 Bandung */}
+          <div
+            className="bg-zinc-800 rounded-lg p-6 flex flex-col sm:flex-row items-center gap-6 shadow-md mt-6"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="300"
+            data-aos-once="true"
+          >
+            <div className="flex-shrink-0">
+              <img
+                src={DataImage.education2}
+                alt="Vocational Highschool 8 Bandung Logo"
+                className="w-16 h-16 rounded-md object-cover"
+                loading="lazy"
+              />
+            </div>
+            <div className="w-full">
+              <h2 className="text-2xl font-bold mb-1">
+                Vocational Highschool 8 Bandung
+              </h2>
+              <p className="text-base opacity-70 mb-1">2019 - 2022</p>
+              <p className="text-base mb-1">
+                Automotive
+              </p>
+              <p className="text-base text-violet-500 font-semibold mb-1">accreditation A</p>
+            </div>
+          </div>
+        </div>
+        {/* Experience */}
+        <div className="experience mt-32">
+          <h1
+            className="text-4xl/snug font-bold mb-4"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
+            Experience
+          </h1>
+          <div className="experience-box grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 grid-cols-1 gap-6">
+            {listExperience.map((exp) => (
+              <div
+                key={exp.id}
+                className="bg-zinc-800 rounded-lg p-6 shadow-md flex flex-col items-center"
+                data-aos="fade-up"
+                data-aos-duration="1200"
+                data-aos-delay={exp.dad}
+                data-aos-once="true"
+              >
+                <img
+                  src={exp.gambar}
+                  alt={exp.nama}
+                  className="w-16 h-16 rounded-md object-cover mb-4"
+                  loading="lazy"
+                />
+                <h2 className="text-xl font-bold mb-2 text-center">
+                  {exp.nama}
+                </h2>
+                <p className="text-base opacity-70 mb-1 text-left font-semibold">
+                  {exp.role}
+                </p>
+                <p className="text-base mb-3 text-left">{exp.tahun}</p>
+                <p className="text-base text-left">{exp.desk}</p>
+              </div>
+            ))}
           </div>
         </div>
         <div className="tools mt-32">

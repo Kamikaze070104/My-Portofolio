@@ -1,4 +1,6 @@
 import HeroImage from "/assets/Faizal-img.png";
+import education1 from "/assets/UPI.png";
+import education2 from "/assets/SMKN8.png";
 import Tools1 from "/assets/tools/vscode.png";
 import Tools2 from "/assets/tools/reactjs.png";
 import Tools3 from "/assets/tools/laravel.png";
@@ -23,11 +25,55 @@ import Sertif3 from "/assets/sertifikat/sertif3.png";
 import Sertif4 from "/assets/sertifikat/sertif4.png";
 import Sertif5 from "/assets/sertifikat/sertif5.png";
 import Sertif6 from "/assets/sertifikat/sertif6.png";
+import experience1 from "/assets/experience/experience1.png";
+import experience2 from "/assets/experience/experience2.png";
+import experience3 from "/assets/experience/experience3.png";
+import experience4 from "/assets/experience/experience4.png";
 
 const DataImage = {
   HeroImage,
+  education1,
+  education2,
 };
 
+export const listExperience = [
+  {
+    id: 1,
+    gambar: experience1,
+    nama: "KOMUNITAS KOMPETEGRAM",
+    role: "Study Group",
+    tahun: "November 2022 - May 2023",
+    desk: "A community focused on enhancing skills in web development, particularly in Node.js.",
+    dad: "100",
+  },
+  {
+    id: 2,
+    gambar: experience2,
+    nama: "Google Developer Student Club",
+    role: "Member",
+    tahun: "December 2022 - June 2023",
+    desk: "A community Supported by Google, focusing on enhancing skills in web development and AI.",
+    dad: "200",
+  },
+  {
+    id: 3,
+    gambar: experience3,
+    nama: "SDN SIRNAMANAH",
+    role: "Web Developer (internship)",
+    tahun: "September 2024 - January 2025",
+    desk: "Developed a website for SDN Sirnamanah, providing information about the school.",
+    dad: "300",
+  },
+  {
+    id: 4,
+    gambar: experience4,
+    nama: "Dinas Komunikasi dan Informatika Jawa Barat",
+    role: "Frontend Developer (internship)",
+    tahun: "April 2025 - July 2025",
+    desk: "Developed a website for Dinas Komunikasi dan Informatika Jawa Barat, to Automated domain checking website for hosting services .",
+    dad: "400",
+  },
+];
 export const listTools = [
   {
     id: 1,
