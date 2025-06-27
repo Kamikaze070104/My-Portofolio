@@ -4,6 +4,7 @@ import { listTools } from "./data.js";
 import { listProyek } from "./data.js";
 import { listSertifikat } from "./data.js";
 import Particles from "../Reactbits/Particles/Particles";
+import TypeIt from "typeit-react";
 
 function App() {
   const downloadCV = () => {
@@ -51,7 +52,17 @@ function App() {
               </div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6 text-left font-inter leading-tight">
                 Hello, I'm{" "}
-                <span className="text-violet-600">Faizal Azzriel Gibar</span>
+                <span className="text-violet-600">
+                  <TypeIt
+                    options={{
+                      strings: ["Faizal Azzriel Gibar"],
+                      speed: 200,
+                      waitUntilVisible: true,
+                      cursor: true,
+                      loop: false,
+                    }}
+                  />
+                </span>
               </h1>
               <h3 className="text-2xl md:text-3xl font-semibold mb-6 text-left font-inter leading-tight">
                 Web Developer
@@ -152,7 +163,7 @@ function App() {
             className="xl:w-2/5 lg:w-2/4 md:w-2/3 sm:w-3/4 w-full text-base/loose opacity-50"
             data-aos="fade-up"
             data-aos-duration="1000"
-            data-aos-delay="300"
+            data-aos-delay="400"
             data-aos-once="true"
           >
             Here are some tools that I often use when creating a website or
@@ -196,7 +207,7 @@ function App() {
             className="text-base/loose text-center opacity-50"
             data-aos="fade-up"
             data-aos-duration="1000"
-            data-aos-delay="300"
+            data-aos-delay="200"
             data-aos-once="true"
           >
             here are some of the projects I've made
@@ -207,8 +218,8 @@ function App() {
                 key={proyek.id}
                 className="p-4 rounded-md bg-zinc-800"
                 data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay={proyek.dad}
+                data-aos-duration="1500"
+                data-aos-delay="400"
                 data-aos-once="true"
               >
                 <img src={proyek.gambar} alt="proyek image" loading="lazy" />
@@ -252,7 +263,7 @@ function App() {
             className="text-base/loose text-center opacity-50 mb-10"
             data-aos="fade-up"
             data-aos-duration="1000"
-            data-aos-delay="300"
+            data-aos-delay="400"
             data-aos-once="true"
           >
             here are some certificates that I have
@@ -263,8 +274,8 @@ function App() {
                 key={sertif.id}
                 className="p-4 rounded-md bg-zinc-800 flex flex-col items-center"
                 data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay={sertif.dad}
+                data-aos-duration="1500"
+                data-aos-delay="400"
                 data-aos-once="true"
               >
                 <img
@@ -304,7 +315,7 @@ function App() {
           className="text-base/loos text-center mb-10 opacity-50"
           data-aos="fade-up"
           data-aos-duration="1000"
-          data-aos-delay="300"
+          data-aos-delay="200"
           data-aos-once="true"
         >
           let's Connect with me
@@ -315,8 +326,8 @@ function App() {
           className="bg-zinc-800 p-10 sm:w-fit w-full mx-auto rounded-md"
           autoComplete="off"
           data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="500"
+          data-aos-duration="2000"
+          data-aos-delay="400"
           data-aos-once="true"
         >
           <div className="flex flex-col gap-6">
