@@ -29,6 +29,7 @@ import experience1 from "/assets/experience/experience1.png";
 import experience2 from "/assets/experience/experience2.png";
 import experience3 from "/assets/experience/experience3.png";
 import experience4 from "/assets/experience/experience4.png";
+import experience5 from "/assets/experience/experience5.png";
 
 const DataImage = {
   HeroImage,
@@ -40,7 +41,7 @@ export const listExperience = [
   {
     id: 1,
     gambar: experience1,
-    nama: "KOMUNITAS KOMPETEGRAM",
+    nama: "KOMPETEGRAM",
     role: "Study Group",
     tahun: "November 2022 - May 2023",
     desk: "A community focused on enhancing skills in web development, particularly in Node.js.",
@@ -72,6 +73,15 @@ export const listExperience = [
     tahun: "April 2025 - July 2025",
     desk: "Developed a website for Dinas Komunikasi dan Informatika Jawa Barat, to Automated domain checking website for hosting services .",
     dad: "400",
+  },
+  {
+    id: 5,
+    gambar: experience5,
+    nama: "PPDKM Coursera",
+    role: "Student (study independent)",
+    tahun: "February 2025 - June 2025",
+    desk: "Course program collaboration UPI and Coursera.",
+    dad: "500",
   },
 ];
 export const listTools = [
