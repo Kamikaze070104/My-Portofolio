@@ -112,7 +112,7 @@ function App() {
       </section>
 
       {/* About Section */}
-      <div className="tentang mt:32 py-10" id="about">
+      <div className="tentang mt-32 py-10" id="about">
         <div
           className="xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-zinc-800 rounded-lg"
           data-aos="fade-up"
@@ -196,7 +196,7 @@ function App() {
             </div>
           </div>
           {/* Vocational Highschool 8 Bandung */}
-          <div
+          {/* <div
             className="bg-zinc-800 rounded-lg p-6 flex flex-col sm:flex-row items-center gap-6 shadow-md mt-6"
             data-aos="fade-up"
             data-aos-duration="1200"
@@ -221,7 +221,7 @@ function App() {
               </p>
               <p className="text-base text-violet-500 font-semibold mb-1">accreditation A</p>
             </div>
-          </div>
+          </div> */}
         </div>
         {/* Experience */}
         <div className="experience mt-32">
